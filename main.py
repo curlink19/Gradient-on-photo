@@ -71,7 +71,7 @@ for i in range(0, N):
     for j in range(0, M):
         position = j
         while len(stack) > 0:
-            if current_count[stack[len(stack) - 1]] <= count[j]:
+            if current_count[stack[len(stack) - 1]] < count[j]:
                 break
             position = stack[len(stack) - 1]
             stack.pop()
