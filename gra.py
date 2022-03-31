@@ -1,10 +1,6 @@
 from lib import *
 import queue
 
-
-EPS = 20
-MIN_LENGTH = 10
-
 def calculate_components(grad):
     color = np.zeros((grad.shape[0], grad.shape[1]))
     current_color = 0

@@ -2,7 +2,7 @@ from gra import *
 import imageio
 
 
-arr = imageio.imread('foo.jpg', pilmode='RGB')
+arr = imageio.imread('foo.png', pilmode='RGB')
 N = arr.shape[0]
 M = arr.shape[1]
 
@@ -32,4 +32,4 @@ for i in range(0, N):
         if color[i][j] != max_color:
             im.arr[i][j] = (0, 0, 0)
 
-imageio.imwrite('foo_.jpg', im.arr)
+imageio.imwrite('foo_.png', im.arr)

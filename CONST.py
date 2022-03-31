@@ -1,0 +1,3 @@
+EPS = 3
+MIN_LENGTH = 5
+LOCAL_SIZE = 6

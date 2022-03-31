@@ -3,8 +3,6 @@ import numpy as np
 import math as math
 
 
-LOCAL_SIZE = 6
-
 def in_range(x, N):
     return (x >= 0) and (x < N)
 

@@ -1,3 +1,5 @@
+from CONST import * 
+
 class Image:
     def __init__(self, arr, N, M):
         self.arr = arr
