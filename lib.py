@@ -26,7 +26,8 @@ def calculate_gradient(im: Image):
                             else:
                                 if (in_range(y + offset, im.M)):
                                     current = im.arr[x][y + offset][proj]
-                            value += current / offset
+                            if current < BORDER_VALUE:
+                                value += current / offset
                         grad[x][y][proj][coor] = value / (2 * (LOCAL_SIZE - 1))
     return grad
 
