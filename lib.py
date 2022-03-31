@@ -9,7 +9,7 @@ def in_range(x, N):
 def calculate_gradient(im: Image):
     grad = np.zeros((im.N, im.M, 3, 2))
     for x in range(0, im.N):
-        if x % 10 == 0:
+        if x % 33 == 0:
             print(x)
         for y in range(0, im.M):
             for proj in range(0, 3):

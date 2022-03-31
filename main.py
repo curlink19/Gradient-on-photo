@@ -1,8 +1,9 @@
 from gra import * 
 import imageio
 
+name = open(".input", "r").read()
 
-arr = imageio.imread('images.jpeg', pilmode='RGB')
+arr = imageio.imread("./samples/" + name, pilmode='RGB')
 N = arr.shape[0]
 M = arr.shape[1]
 
@@ -32,15 +33,15 @@ for i in range(0, N):
         if color[i][j] != max_color:
             im.arr[i][j] = (0, 0, 0)
 
-imageio.imwrite('images_.jpeg', im.arr)
+imageio.imwrite("./samples/modified_" + name, im.arr)
 
 # some debug info
-for i in range(0, N):
-    for j in range(0, M):
-        print(int(length(grad[i][j])), end=' ')
-    print('')
+#for i in range(0, N):
+#    for j in range(0, M):
+#        print(int(length(grad[i][j])), end=' ')
+#    print('')
 
-for i in range(0, N):
-    for j in range(0, M):
-        print(int(color[i][j]), end=' ')
-    print('')
+#for i in range(0, N):
+#    for j in range(0, M):
+#        print(int(color[i][j]), end=' ')
+#    print('')
